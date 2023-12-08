@@ -52,7 +52,7 @@ df_restaurantes = pd.read_csv("SPOILER_nombres_restaurantes_latitud_longitud.csv
 
 
 agent = create_csv_agent(
-    ChatOpenAI(temperature=0.7, model="gpt-4"),
+    ChatOpenAI(temperature=1, model="gpt-4"),
     "SPOILER_Restaurants_Reviews_merged.csv",
     verbose=True,
     agent_type=AgentType.OPENAI_FUNCTIONS,
